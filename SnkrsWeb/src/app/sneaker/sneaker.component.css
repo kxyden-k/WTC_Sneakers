@@ -1,0 +1,24 @@
+mat-card {
+  background-color: #FDF6EB;
+  color: black;
+  font-family: "Futura Extra Black Condensed";
+  height: 100%;
+  width: 80%;
+}
+
+mat-card-subtitle {
+  background-color: #FDF6EB;
+  color: black;
+  font-family: "Futura Extra Black Condensed";
+  height: 100%;
+  width: 80%;
+}
+
+product-card:hover {
+  cursor: pointer;
+}
+
+mat-card-image {
+  object-fit: contain;
+  max-height: 150px;
+}

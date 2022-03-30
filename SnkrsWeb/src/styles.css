@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Roboto Light", "Helvetica Neue", sans-serif, "Futura Extra Black Condensed"; }
+@font-face {
+  font-family: "Futura Extra Black Condensed";
+  src: url("assets/fonts/Futura Extra Black Condensed Regular.otf");
+}

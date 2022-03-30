@@ -1,0 +1,5 @@
+<mat-card class="product-card" [routerLink]="'sneaker/' + sneaker?.id">
+  <mat-card-title>{{ sneaker?.shoe }}</mat-card-title>
+  <mat-card-subtitle>{{ sneaker?.name }}</mat-card-subtitle>
+  <img mat-card-image [src]="imageUrl" />
+</mat-card>

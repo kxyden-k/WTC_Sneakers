@@ -1,0 +1,22 @@
+<h1>{{ product?.title }}</h1>
+<img [src]="imageUrl" class="center">
+<p>Price: {{ product?.retailPrice }}</p>
+<p>Brand: {{ product?.brand }}</p>
+<p>Gender: {{ product?.gender }}</p>
+<p>Release: {{ product?.releaseDate }}</p>
+<p>Colorway: {{ product?.colorway }}</p>
+<p>Seller Email: {{ product?.sellerEmail }}</p>
+<p>Seller Username: {{ product?.sellerUsername }}</p>
+
+
+<button
+  mat-raised-button
+  color="primary"
+  class="snipcart-add-item"
+  [attr.data-item-id]="product?.id"
+  [attr.data-item-price]="product?.retailPrice"
+  [attr.data-item-url]="'product/' + product?.id"
+  [attr.data-item-image]="imageUrl"
+  [attr.data-item-name]="product?.name">
+  Alert Seller
+</button>

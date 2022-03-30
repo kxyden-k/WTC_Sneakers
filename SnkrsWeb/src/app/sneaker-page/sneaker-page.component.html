@@ -1,0 +1,22 @@
+<h1>{{ sneaker?.title }}</h1>
+<img [src]="imageUrl" class="center">
+<p>Price: {{ sneaker?.retailPrice }}</p>
+<p>Brand: {{ sneaker?.brand }}</p>
+<p>Gender: {{ sneaker?.gender }}</p>
+<p>Release: {{ sneaker?.releaseDate }}</p>
+<p>Colorway: {{ sneaker?.colorway }}</p>
+
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Enter Details</h3>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="sellerDetails.name" class="form-control" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="sellerDetails.email" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="addProduct(sellerDetails)">Sell Sneaker</button>
+    </div>
+  </div>
+</div>
